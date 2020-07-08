@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XKCD password Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1 class="page-text">XKCD password Generator</h1>
+    <div class="grid-container">
+      <label for="min">Minimum Word Length &nbsp;</label>
+      <select id="min-option" class="select-box">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+
+    <div class="grid-container">
+      <label for="max">Maximum Word Length &nbsp;</label>
+      <select id="max-option" class="select-box">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+
+    <div class="grid-container">
+      <label for="length">max Length &nbsp;</label>
+      <input id="total-option" class="select-box2" type="text" value="16" />
+    </div>
+    <br />
+
+    <div class="check-box">
+      <input id="Easy-Typing" type="checkbox" value="Easy" />Easy Typing<br />
+      <input id="Num-Sub" type="checkbox" value="NumSub" />Number Substitutes<br />
+    </div>
+
+    <div class="submit-button">
+      <input type="submit" onclick="savetime()" value="Submit" />
+    </div>
+    <br />
+
+    <h1 class="page-text">Possible Passwords</h1>
+    <table id="timetable"></table>
+    <p id="demo"></p>
+
+    <div id="wrapper"></div>
+  </body>
+</html>
